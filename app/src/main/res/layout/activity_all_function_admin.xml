@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".allFunction_admin">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/admin_all"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:id="@+id/btn_userManager"
+            android:drawableTop="@drawable/usermanager"
+            android:background="@android:color/white"
+            android:text="人员管理"
+            android:onClick="click_usermanager"/>
+        <Button
+            android:onClick="click_collectionmanager"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:drawableTop="@drawable/usercollection"
+            android:background="@android:color/white"
+            android:text="收藏管理"
+            android:id="@+id/btn_userCollectionManager"/>
+        <Button
+            android:onClick="click_messagemanager"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="留言管理"
+            android:drawableTop="@drawable/usermessage"
+            android:background="@android:color/white"
+            android:id="@+id/btn_messageManager"/>
+    </LinearLayout>
+
+</LinearLayout>

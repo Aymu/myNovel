@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".messageFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="8"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:text="留言板"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2.5"
+                android:textColor="@android:color/holo_blue_light"
+                android:id="@+id/all"
+                android:textSize="12dp"
+                android:text="查看社区留言"
+                android:clickable="true"
+                android:autoLink="all"/>
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:id="@+id/reader_message"
+            android:background="@drawable/edit_bg"
+            android:hint="说点什么吧......"
+            android:gravity="start"
+            android:textColorHint="@android:color/holo_orange_light"/>
+
+        <Button
+            android:id="@+id/commit_mes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:drawableLeft="@android:drawable/ic_menu_upload"
+            android:text="提交留言" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:text="我的留言"
+                android:textSize="20dp"
+                android:id="@+id/myMessage"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:id="@+id/click_message"
+                android:drawableLeft="@android:drawable/ic_menu_search"
+                android:text="历史留言"/>
+        </LinearLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:id="@+id/message_listview">
+        </ListView>
+    </LinearLayout>
+
+</FrameLayout>

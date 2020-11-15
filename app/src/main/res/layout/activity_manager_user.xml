@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".manager_user">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="用户管理"
+        android:textSize="25dp"
+        android:textColor="@android:color/holo_blue_bright"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:hint= "输入用户名"
+            android:drawableLeft="@android:drawable/ic_menu_search"
+            android:id="@+id/userManager_search"/>
+        <Button
+            android:onClick="click_searchuser"
+            android:layout_weight="2"
+            android:id="@+id/btn_usermanager_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="搜索" />
+    </LinearLayout>
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:id="@+id/userManager_listview">
+    </ListView>
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="right"
+        android:onClick="click_userManager_add"
+        android:background="@drawable/usermanager_add"/>
+
+</LinearLayout>

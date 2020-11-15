@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <ImageView
+        android:layout_marginTop="50dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/book_index"/>
+    <LinearLayout
+        android:paddingTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/user"
+            android:drawableLeft="@drawable/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Enter Username"
+            android:background="@drawable/edit_bg"
+            android:textColorHint="@android:color/darker_gray"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/pwd"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Enter password"
+            android:drawableLeft="@drawable/password"
+            android:password="true"
+            android:background="@drawable/edit_bg"
+            android:textColorHint="@android:color/darker_gray"/>
+
+    </LinearLayout>
+    <Button
+        android:onClick="tryLogin"
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@android:drawable/btn_radio"
+        android:text="登录" />
+
+    <Button
+        android:onClick="tryRes"
+        android:id="@+id/btn_res"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@android:drawable/btn_radio"
+        android:text="注册" />
+
+</LinearLayout>
